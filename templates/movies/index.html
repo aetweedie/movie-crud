@@ -14,7 +14,7 @@
     </form>
   </section>
   <section class="movie-list">
-{{#movies}}
+
     <table>
       <thead>
         <tr>
@@ -22,10 +22,13 @@
           <th>Director</th>
           <th>Year</th>
           <th>Rating</th>
+          <th></th>
+          <th></th>
         </tr>
       </thead>
 
       <tbody>
+        {{#movies}}
         <tr>
           <td><a href="/movies/{{_id}}/">{{title}}</a></td>
           <td>{{director}}</td>
@@ -42,9 +45,10 @@
             </form>
           </td>
         </tr>
+        {{/movies}}
       </tbody>
     </table>
-{{/movies}}
+
       <!--<h2 class="title"><a href="/movies/{{_id}}/">{{title}}</a></h2>
       <h3>{{director}}</h3>
       <h3>{{year}}</h3>

@@ -79,6 +79,10 @@ h1, h2 {
 
 table {
   width: 100%;
-  border-bottom: 2px solid black;
   text-align: center;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 2px solid black;
 }
