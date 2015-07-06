@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movies!</title>
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+  <section class="header">
+    <h1>Movie ratings by Alan:</h1>
+    <h2>I am absolutely correct about all of these ratings</h2>
+    <form class="new-movie" action="/movies/new" method="post">
+      <input type="submit" name="name" value="Add a movie">
+    </form>
+  </section>
+  <section class="movie-list">
+{{#movies}}
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Director</th>
+          <th>Year</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td><a href="/movies/{{_id}}/">{{title}}</a></td>
+          <td>{{director}}</td>
+          <td>{{year}}</td>
+          <td>{{rating}}</td>
+          <td>
+            <form class="edit" action="/movies/{{_id}}/edit" method="get">
+              <input type="submit" value="Edit Movie">
+            </form>
+          </td>
+          <td>
+            <form class="destroy" action="/movies/{{_id}}/delete" method="post">
+              <input type="submit" value="Delete Movie">
+            </form>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+{{/movies}}
+      <!--<h2 class="title"><a href="/movies/{{_id}}/">{{title}}</a></h2>
+      <h3>{{director}}</h3>
+      <h3>{{year}}</h3>
+      <h3>{{rating}}</h3>
+      <div class="poster">
+        <img src="{{posterUrl}}" alt="">
+      </div>
+      <form class="edit" action="/movies/{{_id}}/edit" method="get">
+        <input type="submit" value="Edit Movie">
+      </form>
+      <form class="destroy" action="/movies/{{_id}}/delete" method="post">
+        <input type="submit" value="Delete Movie">
+      </form>-->
+  </section>
+</body>
+</html>

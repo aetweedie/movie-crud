@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New movie</title>
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+<body class="show-edit-new-page">
+  <form action="/movies" method="post">
+    <label for="title">Title</label>
+    <input type="text" name="title" value="">
+    <label for="director">Director</label>
+    <input type="text" name="director" value="">
+    <label for="year">Year</label>
+    <input type="text" name="year" value="">
+    <label for="rating">Rating</label>
+    <select class="" name="rating">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    <label for="posterUrl">URL for poster</label>
+    <input type="text" name="posterUrl" value="">
+    <input type="submit" name="" value="Send it in">
+  </form>
+</body>
+</html>

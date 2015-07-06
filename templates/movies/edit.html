@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{name}}</title>
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+<body class="show-edit-new-page">
+  <h1>Edit {{title}}</h1>
+  <img src="{{posterUrl}}" alt="" />
+<form id="form" class="" action="/movies/{{_id}}/update" method="post">
+  <label for="title">Title</label>
+  <input id="title" type="text" name="title" value="{{title}}">
+    <label for="director">Director</label>
+    <input type="text" name="director" value="{{director}}">
+    <label for="year">Year</label>
+    <input type="text" name="year" value="{{year}}">
+    <label for="rating">Rating</label>
+    <select class="" name="rating" value="{{rating}}">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    <label for="posterUrl">URL for poster</label>
+    <input type="text" name="posterUrl" value="{{posterUrl}}">
+  <input type="submit" value="Edit the movie">
+</form>
+</body>
+</html>

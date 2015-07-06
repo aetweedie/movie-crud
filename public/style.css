@@ -1,0 +1,84 @@
+html, body {
+  font-family: monospace;
+  width: auto;
+}
+
+.new-movie input {
+  background-color: rgb(22, 201, 142);
+  color: white;
+  height: 40px;
+  float: right;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-family: monospace;
+}
+
+.new-movie input:hover {
+  background-color: rgb(40, 94, 213);
+}
+
+.edit input {
+  background-color: rgb(22, 201, 142);
+  color: white;
+  height: 40px;
+  border-radius: 5px;
+  font-family: monospace;
+}
+
+.destroy input {
+  background-color: rgb(22, 201, 142);
+  color: white;
+  height: 40px;
+  border-radius: 5px;
+  font-family: monospace;
+}
+
+.edit input:hover {
+  background-color: rgb(40, 94, 213);
+}
+
+.destroy input:hover {
+  background-color: rgb(214, 25, 82)
+}
+
+.header {
+  color: white;
+  background-color: black;
+  position: static;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+h1, h2 {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.movie-list {
+  display: list-item;
+  width: 70%;
+}
+
+.title, h3 {
+  display: inline-block;
+}
+
+.edit, .destroy {
+  float: right;
+  margin-top: 50px;
+  display: block;
+}
+
+.show-edit-new-page {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 400px;
+}
+
+table {
+  width: 100%;
+  border-bottom: 2px solid black;
+  text-align: center;
+}
