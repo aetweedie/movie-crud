@@ -1,6 +1,10 @@
 html, body {
   font-family: monospace;
   width: auto;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 .new-movie input {
@@ -9,6 +13,7 @@ html, body {
   height: 40px;
   float: right;
   margin-bottom: 20px;
+  margin-right: 20px;
   border-radius: 5px;
   font-family: monospace;
 }
@@ -85,4 +90,26 @@ table {
 
 tr {
   border-bottom: 2px solid black;
+}
+
+.landing {
+  background-image: url(http://www.wallpaperinfinite.com/upload/wallpaper_images/zero%20dark%20thirty%20movie%20wallpaper41326.jpg);
+  background-repeat: no-repeat;
+}
+
+.landing-form input{
+  background-color: rgb(22, 201, 142);
+  color: white;
+  height: 40px;
+  border-radius: 5px;
+  font-family: monospace;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.landing-form input:hover {
+  background-color: rgb(40, 94, 213);
 }

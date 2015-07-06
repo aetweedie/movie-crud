@@ -49,7 +49,7 @@ routes.addRoute ('/movies/:id', function (req, res, url) {
         director: docs.director,
         year: docs.year,
         rating: docs.rating,
-        posterUrl: docs.posterUrl 
+        posterUrl: docs.posterUrl
         });
       res.end(template);
     });
@@ -104,6 +104,17 @@ routes.addRoute ('/public/*', function(req, res, url) {
     }
     res.end(file);
   });
+});
+
+routes.addRoute('/', function (req, res, url) {
+  if (req.method === 'GET') {
+    movies.find({}, function(err, doc) {
+      if (err) console.log(err);
+      var file = fs.readFileSync('templates/movies/landing.html');
+      var template = view.render(file.toString(), doc);
+      res.end(template);
+    });
+  }
 });
 
 module.exports = routes;
