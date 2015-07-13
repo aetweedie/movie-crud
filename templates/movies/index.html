@@ -9,7 +9,6 @@
   <section class="header">
     <h1>Movie ratings by Alan:</h1>
     <h2>I am absolutely correct about all of these ratings</h2>
-    <h2>Now with fartscroll.js!!</h2>
     <form class="new-movie" action="/movies/new" method="post">
       <input type="submit" name="name" value="Add a movie">
     </form>
@@ -33,6 +32,7 @@
           <td>{{director}}</td>
           <td>{{year}}</td>
           <td>{{rating}}</td>
+          <td><img class="poster" src="{{posterUrl}}" alt="" /></td>
           <td>
             <form class="edit" action="/movies/{{_id}}/edit" method="get">
               <input type="submit" value="Edit Movie">
@@ -60,10 +60,6 @@
       <form class="destroy" action="/movies/{{_id}}/delete" method="post">
         <input type="submit" value="Delete Movie">
       </form>-->
-  </section>
-  <section class="fartscroll">
-    <!--<script src="http://code.onion.com/fartscroll.js"></script>
-    <script>fartscroll(10)</script>-->
   </section>
 </body>
 </html>
