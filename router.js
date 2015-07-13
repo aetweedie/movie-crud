@@ -1,6 +1,7 @@
+require('dotenv').load();
 var routes = require('routes')();
 var fs = require('fs');
-var db = require('monk')('localhost/movies');
+var db = require('monk')(process.env.MONGOLAB_URI);
 var movies = db.get('movies');
 var qs = require('qs');
 var view = require('mustache');

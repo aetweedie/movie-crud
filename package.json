@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/aetweedie/movie-crud",
   "dependencies": {
+    "dotenv": "^1.2.0",
     "mime": "^1.3.4",
     "monk": "^1.0.1",
     "mustache": "^2.1.2",
